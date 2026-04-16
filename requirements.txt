@@ -1,0 +1,14 @@
+pandas>=2.2.0
+numpy>=1.26.0
+pandas-ta>=0.3.14b0
+yfinance>=0.2.36
+python-telegram-bot>=20.8
+apscheduler>=3.10.4
+matplotlib>=3.8.3
+pytz>=2024.1
+requests>=2.31.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+streamlit>=1.31.0
+watchdog>=4.0.0
+plotly>=5.19.0

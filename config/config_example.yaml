@@ -1,0 +1,44 @@
+# Intraday Signal Generator Configuration
+
+# Ticker Universe
+# Select liquid stocks (e.g., Nifty 100 components)
+symbols:
+  - "RELIANCE.NS"
+  - "HDFCBANK.NS"
+  - "INFY.NS"
+  - "TCS.NS"
+  - "ICICIBANK.NS"
+  - "SBIN.NS"
+  - "BHARTIARTL.NS"
+  - "ITC.NS"
+  - "KOTAKBANK.NS"
+  - "LT.NS"
+
+# Trading Capital & Risk Management
+capital: 30000.0  # Total account capital in INR
+risk_per_trade_percent: 2.0  # Risk 2% of capital per trade
+max_daily_loss_percent: 4.0  # Stop trading if daily loss exceeds 4%
+max_positions: 1  # Maximum simultaneous open positions
+
+# Strategy Parameters
+timeframe: "5m"  # Signal timeframe
+trend_timeframe: "15m"  # Trend filter timeframe
+trend_ema_period: 50
+entry_rsi_period: 14
+entry_rsi_overbought: 60
+entry_rsi_oversold: 40
+entry_bb_period: 20
+entry_bb_std: 2.0
+vwap_dip_percent: 0.3  # Entry trigger distance from VWAP (%)
+
+# Telegram Alerts
+telegram:
+  bot_token: "YOUR_BOT_TOKEN_HERE"
+  chat_id: "YOUR_CHAT_ID_HERE"
+  enabled: true
+
+# System Settings
+log_level: "INFO"
+data_source: "yfinance"  # Options: yfinance, custom_stub
+backtest_months: 6
+timezone: "Asia/Kolkata"

@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Sensitive Configs
+config/config.yaml
+!config/config_example.yaml
+
+# Local Data and Logs
+data/
+logs/
+reports/
+*.db
+*.csv
+!iman_backtest_results.csv
+!rsi_macd_backtest_results.csv
+!smc_backtest_results.csv
+
+# IDEs
+.vscode/
+.idea/
+.streamlit/
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+.gemini/
+.antigravity/
+
+# Screener Reports
+reports/*.json
+!reports/screener_latest.json
